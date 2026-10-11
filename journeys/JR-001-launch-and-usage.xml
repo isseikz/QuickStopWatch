@@ -1,0 +1,9 @@
+<journey name="JR-001-launch-and-usage">
+    <description>App launches from launcher and displays usage instructions (REQ-017)</description>
+    <steps>
+        <step action="launch" package="com.puzzroom.quickstopwatch" activity=".MainActivity" />
+        <step action="assert_visible" testTag="usage_screen" />
+        <step action="assert_visible" testTag="usage_step_1" />
+        <step action="assert_visible" testTag="usage_step_2" />
+    </steps>
+</journey>

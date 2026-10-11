@@ -1,0 +1,10 @@
+<journey name="JR-002-tile-and-stopwatch">
+    <description>Tile click displays floating stopwatch and tap toggles timing (REQ-001, REQ-002, REQ-005)</description>
+    <steps>
+        <step action="click_tile" service=".service.QuickStopWatchTileService" />
+        <step action="assert_visible" testTag="floating_stopwatch" />
+        <step action="click" testTag="floating_stopwatch" />
+        <step action="wait" duration="2000" />
+        <step action="assert_visible" testTag="floating_stopwatch_time" />
+    </steps>
+</journey>

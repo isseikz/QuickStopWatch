@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- REQ-001, NFR-001: Only SYSTEM_ALERT_WINDOW is requested -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,8 @@
         android:supportsRtl="true"
         android:windowSoftInputMode="adjustResize"
         android:theme="@style/Theme.QuickStopWatch">
+
+        <!-- SCR-001: Launcher activity showing usage instructions -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -17,6 +22,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- DD-008: Overlay service without FGS (ADR-0002) -->
+        <service
+            android:name=".service.StopwatchOverlayService"
+            android:exported="false" />
+
+        <!-- DD-007, REQ-018: Quick Settings Tile -->
+        <service
+            android:name=".service.QuickStopWatchTileService"
+            android:exported="true"
+            android:label="@string/tile_name"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
