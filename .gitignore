@@ -1,0 +1,25 @@
+*.iml
+.gradle
+.kotlin
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# --- Harness ---
+# Release signing material must never be committed.
+keystore.properties
+*.jks
+*.keystore
+play-service-account*.json
+# Local harness state (verify markers, stop-gate counters)
+.harness/
