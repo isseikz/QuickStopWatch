@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">QuickStopWatch</string>
+
+    <!-- SCR-002 floating stopwatch -->
+    <string name="floating_description">Stopwatch %1$s</string>
+    <string name="floating_state_idle">Ready</string>
+    <string name="floating_state_running">Running</string>
+    <string name="floating_state_paused">Paused</string>
+    <string name="floating_state_limit">Limit reached</string>
+    <string name="floating_action_start">Start</string>
+    <string name="floating_action_pause">Pause</string>
+    <string name="floating_action_resume">Resume</string>
+
+    <!-- SCR-001 how to use -->
+    <string name="usage_title">How to use</string>
+    <string name="usage_summary">A small stopwatch floats on top of any app. Show or hide it from the Quick Settings tile.</string>
+    <string name="usage_step_tile_title">Add the tile</string>
+    <string name="usage_step_tile_body">Swipe down twice from the top of the screen, tap the pencil (edit) icon, and drag the \"Stopwatch\" tile into the active tiles.</string>
+    <string name="usage_step_permission_title">Allow display over other apps</string>
+    <string name="usage_step_permission_body">The first time you tap the tile, the settings screen opens. Turn on \"Display over other apps\" for QuickStopWatch, then tap the tile again.</string>
+    <string name="usage_step_toggle_title">Show and hide</string>
+    <string name="usage_step_toggle_body">Tap the tile to show the stopwatch. Tap it again to hide it. The screen stays on while the stopwatch is shown.</string>
+    <string name="usage_step_operate_title">Use the stopwatch</string>
+    <string name="usage_step_operate_body">Tap the circle to start or pause. Drag it to move it. Hiding it resets the time to 00:00.</string>
+    <string name="usage_note_lock_screen">The stopwatch is not shown on the lock screen. Time keeps counting while the screen is off.</string>
 </resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QuickStopWatch</string>
+
+    <!-- SCR-002 floating stopwatch -->
+    <string name="floating_description">ストップウォッチ %1$s</string>
+    <string name="floating_state_idle">待機中</string>
+    <string name="floating_state_running">計測中</string>
+    <string name="floating_state_paused">一時停止中</string>
+    <string name="floating_state_limit">上限に到達</string>
+    <string name="floating_action_start">開始</string>
+    <string name="floating_action_pause">一時停止</string>
+    <string name="floating_action_resume">再開</string>
+
+    <!-- SCR-001 how to use -->
+    <string name="usage_title">使い方</string>
+    <string name="usage_summary">どのアプリの上にも小さなストップウォッチを重ねて表示できます。表示と非表示はクイック設定のタイルで切り替えます。</string>
+    <string name="usage_step_tile_title">タイルを追加する</string>
+    <string name="usage_step_tile_body">画面上部から 2 回下にスワイプし、鉛筆（編集）アイコンをタップして、「ストップウォッチ」タイルを上のタイル一覧へドラッグします。</string>
+    <string name="usage_step_permission_title">「他のアプリの上に重ねて表示」を許可する</string>
+    <string name="usage_step_permission_body">初めてタイルをタップすると設定画面が開きます。QuickStopWatch の「他のアプリの上に重ねて表示」をオンにして、もう一度タイルをタップしてください。</string>
+    <string name="usage_step_toggle_title">表示と非表示</string>
+    <string name="usage_step_toggle_body">タイルをタップするとストップウォッチが表示され、もう一度タップすると非表示になります。表示中は画面が消灯しません。</string>
+    <string name="usage_step_operate_title">ストップウォッチを使う</string>
+    <string name="usage_step_operate_body">丸いボタンをタップすると開始・一時停止します。ドラッグで移動できます。非表示にすると時間は 00:00 にリセットされます。</string>
+    <string name="usage_note_lock_screen">ロック画面には表示されません。画面が消えている間も時間は進みます。</string>
+</resources>
