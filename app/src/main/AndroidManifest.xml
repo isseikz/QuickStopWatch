@@ -33,7 +33,7 @@
             android:name=".service.QuickStopWatchTileService"
             android:exported="true"
             android:label="@string/tile_name"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@drawable/ic_qs_stopwatch"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />

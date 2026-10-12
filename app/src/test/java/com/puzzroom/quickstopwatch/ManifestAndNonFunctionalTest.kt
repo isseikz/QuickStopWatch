@@ -34,6 +34,7 @@ class ManifestAndNonFunctionalTest {
       )
     val label = serviceInfo.loadLabel(pm).toString()
     assertTrue(label.isNotEmpty())
+    assertEquals(R.drawable.ic_qs_stopwatch, serviceInfo.icon)
   }
 
   @Test

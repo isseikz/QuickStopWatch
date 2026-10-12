@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Top Crown: Stem and Cap -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M9,2h6v2h-6z M11,4h2v2h-2z" />
+    <!-- Clock Body (Outer circle: r=8, Inner hole: r=6 -> stroke width 2) and Center Hand -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M12,5 C7.58,5 4,8.58 4,13 C4,17.42 7.58,21 12,21 C16.42,21 20,17.42 20,13 C20,8.58 16.42,5 12,5 Z M12,7 C15.31,7 18,9.69 18,13 C18,16.31 15.31,19 12,19 C8.69,19 6,16.31 6,13 C6,9.69 8.69,7 12,7 Z M11,8 h2 v5.25 l3.18,1.83 l-1,1.73 L11.5,14.5 Z" />
+    <!-- 45-degree Lap / Start button (top right) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M18.03,6.56 l1.41,-1.41 l1.41,1.41 l-1.41,1.41 z" />
+</vector>
