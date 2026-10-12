@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Top Crown: Stem / Neck (x: 52..56, y: 25..31) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M52,25 h4 v6 h-4 z" />
+
+    <!-- Top Crown: Button Cap -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M49.5,22 h9 a1.5,1.5 0 0,1 1.5,1.5 v0 a1.5,1.5 0 0,1 -1.5,1.5 h-9 a1.5,1.5 0 0,1 -1.5,-1.5 v0 a1.5,1.5 0 0,1 1.5,-1.5 z" />
+
+    <!-- Right 45-degree button -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M70.5,37.5 l3.5,-3.5 a1.2,1.2 0 0,1 1.7,0 l1.8,1.8 a1.2,1.2 0 0,1 0,1.7 l-3.5,3.5 z" />
+
+    <!-- Outer Circular Rim of Stopwatch (thick ring: outer R=26, inner R=21.5) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M54,31 A26,26 0 1,0 54,83 A26,26 0 1,0 54,31 Z M54,35.5 A21.5,21.5 0 1,1 54,78.5 A21.5,21.5 0 1,1 54,35.5 Z" />
+
+    <!-- Tick marks on the dial (12, 3, 6, 9 o'clock) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M53.25,38.5 h1.5 v3 h-1.5 z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M72.5,56.25 h3 v1.5 h-3 z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M53.25,72.5 h1.5 v3 h-1.5 z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M38.5,56.25 h3 v1.5 h-3 z" />
+
+    <!-- Stopwatch Hand -->
+    <path
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M54,57 L63.5,47.5" />
+
+    <!-- Center Pivot Pin -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M54,54 A3,3 0 1,0 54,60 A3,3 0 1,0 54,54 Z" />
+
+</vector>

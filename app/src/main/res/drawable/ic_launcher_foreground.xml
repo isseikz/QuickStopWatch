@@ -1,30 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- Elevation drop shadow for the floating circle (floating feeling) -->
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0.25"
+        android:pathData="M54,34 A26,26 0 1,0 54,86 A26,26 0 1,0 54,34 Z" />
+
+    <!-- Top Crown: Stem / Neck (x: 52..56, y: 25..31) -->
+    <path
+        android:fillColor="#94A3B8"
+        android:pathData="M52,25 h4 v6 h-4 z" />
+
+    <!-- Top Crown: Button Cap (x: 48..60, y: 22..25, r=1.5) -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M49.5,22 h9 a1.5,1.5 0 0,1 1.5,1.5 v0 a1.5,1.5 0 0,1 -1.5,1.5 h-9 a1.5,1.5 0 0,1 -1.5,-1.5 v0 a1.5,1.5 0 0,1 1.5,-1.5 z" />
+
+    <!-- Right 45-degree lap/action button (center approx 72, 39) -->
+    <path
+        android:fillColor="#94A3B8"
+        android:pathData="M70.5,37.5 l3.5,-3.5 a1.2,1.2 0 0,1 1.7,0 l1.8,1.8 a1.2,1.2 0 0,1 0,1.7 l-3.5,3.5 z" />
+
+    <!-- Outer Circular Body of Stopwatch (center 54, 57, radius 26) -->
     <path
         android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:pathData="M54,31 A26,26 0 1,0 54,83 A26,26 0 1,0 54,31 Z" />
+
+    <!-- Inner Dial Face (center 54, 57, radius 21.5) -->
+    <path
+        android:fillColor="#1E293B"
+        android:pathData="M54,35.5 A21.5,21.5 0 1,0 54,78.5 A21.5,21.5 0 1,0 54,35.5 Z" />
+
+    <!-- Tick marks on the dial (12, 3, 6, 9 o'clock) -->
+    <!-- 12 o'clock tick -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M53.25,38.5 h1.5 v3 h-1.5 z" />
+    <!-- 3 o'clock tick -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M72.5,56.25 h3 v1.5 h-3 z" />
+    <!-- 6 o'clock tick -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M53.25,72.5 h1.5 v3 h-1.5 z" />
+    <!-- 9 o'clock tick -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M38.5,56.25 h3 v1.5 h-3 z" />
+
+    <!-- Active timing arc on dial (from 12 o'clock through 2 o'clock, radius 18, cyan accent) -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M54,39 A18,18 0 0,1 69.5,47.5" />
+
+    <!-- Center Pivot Pin (center 54, 57, radius 3) -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M54,54 A3,3 0 1,0 54,60 A3,3 0 1,0 54,54 Z" />
+
+    <!-- Stopwatch Hand (pointing to ~2 o'clock: dx=9.5, dy=-9.5, tip at 63.5, 47.5) -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M54,57 L63.5,47.5" />
+
+    <!-- Center Inner Dot (radius 1.2) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,55.8 A1.2,1.2 0 1,0 54,58.2 A1.2,1.2 0 1,0 54,55.8 Z" />
+
 </vector>
